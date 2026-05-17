@@ -63,7 +63,7 @@ passwordForm.addEventListener("submit", (event) => {
     return;
   }
 
-  passwordError.textContent = "Almost, my love. Try our anniversary date.";
+  passwordError.textContent = "Almost, my love. Try our anniversary date naaaa. How can you forget hushhh:(";
   passwordInput.select();
 });
 
