@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>For My Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="password-screen" id="passwordScreen" aria-label="Secret garden password">
+      <form class="password-card" id="passwordForm">
+        <p class="password-kicker">Secret garden</p>
+        <h2>Only my Ally can open this.</h2>
+        <label for="passwordInput">What day did our story become official?</label>
+        <div class="password-row">
+          <input id="passwordInput" type="text" autocomplete="off" placeholder="Month day, year">
+          <button class="enter-button" type="submit">Unlock</button>
+        </div>
+        <p class="password-hint">Hint: our anniversary</p>
+        <p class="password-error" id="passwordError" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="opening-screen" id="openingScreen" aria-label="Opening love note">
+      <div class="opening-hearts" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="photo-frame">
+        <img src="her-photo.jpg" alt="My favorite person" id="openingPhoto">
+        <div class="photo-fallback" id="photoFallback">Add her photo here</div>
+      </div>
+      <p class="opening-kicker">Before the garden opens</p>
+      <h2>This little world is made for you.</h2>
+      <p class="opening-copy">Wait a second. I have something blooming for you.</p>
+      <button class="enter-button" type="button" id="enterGarden">Open the garden</button>
+    </section>
+
+    <main class="garden-shell">
+      <section class="intro" aria-labelledby="title">
+        <p class="kicker">
+          <span>A little garden, just for you</span>
+          <span>From your Shazeee</span>
+        </p>
+        <h1 id="title">Every flower is something I love about my Ally<3</h1>
+        <p class="subtitle">
+          Tap the flowers and let them open. Each one carries a note I want you to keep.
+        </p>
+      </section>
+
+      <section class="garden" aria-label="Interactive flower messages">
+        <div class="sky-glow" aria-hidden="true"></div>
+        <div class="message-card" id="messageCard" aria-live="polite">
+          <span class="message-count" id="messageCount">Pick a flower</span>
+          <p id="messageText">I made this tiny garden because loving you makes ordinary things feel so magical...</p>
+        </div>
+
+        <button class="flower daisy blue flower-one" type="button" data-index="0" aria-label="Open message one">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="petal petal-f"></span>
+            <span class="petal petal-g"></span>
+            <span class="petal petal-h"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower tulip yellow flower-two" type="button" data-index="1" aria-label="Open message two">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower lily white flower-three" type="button" data-index="2" aria-label="Open message three">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="petal petal-f"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower daisy white flower-four" type="button" data-index="3" aria-label="Open message four">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="petal petal-f"></span>
+            <span class="petal petal-g"></span>
+            <span class="petal petal-h"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower tulip blue flower-five" type="button" data-index="4" aria-label="Open message five">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower rose red flower-six" type="button" data-index="5" aria-label="Open message six">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower rose yellow flower-seven" type="button" data-index="6" aria-label="Open message seven">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower daisy yellow flower-eight" type="button" data-index="7" aria-label="Open message eight">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="petal petal-f"></span>
+            <span class="petal petal-g"></span>
+            <span class="petal petal-h"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <div class="ground" aria-hidden="true"></div>
+      </section>
+
+      <section class="final-note">
+        <button class="love-button" type="button" id="surpriseButton">Open one more note</button>
+        <p class="surprise" id="surprise" hidden>
+          No matter where life takes us, my favorite place is anywhere I get to make you smile.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
