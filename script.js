@@ -31,13 +31,12 @@ const photoOptions = [
 ];
 let photoOptionIndex = 0;
 const anniversaryAnswers = new Set([
-  "feb202026",
-  "february202026",
-  "february20th2026",
-  "feb20th2026",
-  "02202026",
-  "2202026",
-  "20260220"
+  "mar202026",
+  "march202026",
+  "march20th2026",
+  "mar20th2026",
+  "03202026",
+  "3202026"
 ]);
 
 function normalizeAnswer(value) {
@@ -63,7 +62,7 @@ passwordForm.addEventListener("submit", (event) => {
     return;
   }
 
-  passwordError.textContent = "Almost, my love. Try our anniversary date naaaa. How can you forget hushhh:(";
+  passwordError.textContent = "Almost, my love... Try our anniversary date again naaaa. How can you forget hushhh... Shibal:(";
   passwordInput.select();
 });
 
